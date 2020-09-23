@@ -1,3 +1,3 @@
 # Strapi application
 
-A quick description of your strapi application
+start starpi cms with: yarn dev  goto localhost:1337/admin  to add content.
