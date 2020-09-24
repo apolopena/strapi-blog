@@ -27,7 +27,10 @@ const Article = () => {
 
             <div className="uk-section">
               <div className="uk-container uk-container-small">
-                <ReactMarkdown source={article.content} />
+                 <ReactMarkdown 
+                  source={article.content}
+                  transformImageUri={ (path) => process.env.API_URL + path }
+                 />
                 <p>
                   <Moment format="MMM Do YYYY">{article.published_at}</Moment>
                 </p>
