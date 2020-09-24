@@ -7,7 +7,9 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "dump": "strapi config:dump > layout-config.json && cat layout-config.json",
+    "restore": "strapi config:restore -f layout-config.json"
   },
   "devDependencies": {},
   "dependencies": {

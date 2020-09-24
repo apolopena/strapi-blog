@@ -107,8 +107,13 @@ coverage
 # Strapi
 ############################
 
-.env
-license.txt
 exports
 .cache
 build
+layout-config.json
+
+############################
+# Heroku (as per https://strapi.io/documentation/v3.x/deployment/heroku.html#_4-update-gitignore)
+############################
+package-lock.json
+
