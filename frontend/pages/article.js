@@ -29,7 +29,7 @@ const Article = () => {
               <div className="uk-container uk-container-small">
                  <ReactMarkdown 
                   source={article.content}
-                  transformImageUri={ (path) => process.env.API_URL + path }
+                  transformImageUri={ (uri) => /^https?:/.test(uri) ? uri : process.env.API_URL + uri }
                  />
                 <p>
                   <Moment format="MMM Do YYYY">{article.published_at}</Moment>
